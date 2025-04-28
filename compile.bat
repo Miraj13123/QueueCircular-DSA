@@ -2,7 +2,7 @@
 ::setlocal EnableDelayedExpansion
 
 :: Compile Java files
-javac lib\*.java src\*.java
+javac -cp . lib\*.java src\*.java
 
 ::error handling   // u can skip this or delete this. then it will not notify u if the compilation is failed or not
 if %ERRORLEVEL% equ 0 (
