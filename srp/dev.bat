@@ -9,7 +9,7 @@ echo cleared
 setlocal EnableDelayedExpansion
 
 :: Compile Java files
-javac --release 17 -cp . lib\*.java src\*.java
+javac -cp . lib\*.java src\*.java
 if %ERRORLEVEL% equ 0 (
     echo all files are compiled
 ) else (
